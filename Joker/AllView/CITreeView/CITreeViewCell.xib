@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TreeViewCellIdentifier" rowHeight="40" id="KGk-i7-Jjw" customClass="CITreeViewCell" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-fp-7Rv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1vp-Fc-XGb">
+                                <rect key="frame" x="10" y="10" width="300" height="19.5"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pbI-H6-LpW">
+                                        <rect key="frame" x="-40" y="0.0" width="40" height="19.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ctL-AH-VRr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmb-5V-lWc">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                                        <color key="textColor" red="0.33725490196078434" green="0.3411764705882353" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ful-cm-e4T">
+                                <rect key="frame" x="10" y="38.5" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3HS-Rt-BZG"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="nTg-hn-LDc">
+                                <rect key="frame" x="297" y="16" width="13" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="2cu-VW-u8b"/>
+                                    <constraint firstAttribute="width" constant="13" id="l9q-pd-okK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ful-cm-e4T" secondAttribute="bottom" id="aEg-AD-LJ4"/>
+                            <constraint firstItem="1vp-Fc-XGb" firstAttribute="leading" secondItem="kPH-fp-7Rv" secondAttribute="leading" constant="10" id="eHM-qa-PBh"/>
+                            <constraint firstItem="1vp-Fc-XGb" firstAttribute="top" secondItem="kPH-fp-7Rv" secondAttribute="top" constant="10" id="elm-FZ-COf"/>
+                            <constraint firstItem="Ful-cm-e4T" firstAttribute="trailing" secondItem="1vp-Fc-XGb" secondAttribute="trailing" id="fI6-od-jmD"/>
+                            <constraint firstAttribute="bottom" secondItem="1vp-Fc-XGb" secondAttribute="bottom" constant="10" id="frV-k8-0jw"/>
+                            <constraint firstItem="nTg-hn-LDc" firstAttribute="trailing" secondItem="Ful-cm-e4T" secondAttribute="trailing" id="ih3-5C-xkE"/>
+                            <constraint firstItem="nTg-hn-LDc" firstAttribute="centerY" secondItem="kPH-fp-7Rv" secondAttribute="centerY" id="l1J-YA-yWf"/>
+                            <constraint firstAttribute="trailing" secondItem="1vp-Fc-XGb" secondAttribute="trailing" constant="10" id="xje-6B-gw9"/>
+                            <constraint firstItem="Ful-cm-e4T" firstAttribute="leading" secondItem="1vp-Fc-XGb" secondAttribute="leading" id="zkW-f9-BRT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kPH-fp-7Rv" secondAttribute="trailing" id="HcH-8V-sbf"/>
+                    <constraint firstAttribute="bottom" secondItem="kPH-fp-7Rv" secondAttribute="bottom" id="XiA-Nx-9hK"/>
+                    <constraint firstItem="kPH-fp-7Rv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lQ5-UI-8ms"/>
+                    <constraint firstItem="kPH-fp-7Rv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zD9-oQ-oKt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="pbI-H6-LpW" id="HRw-Ar-sKS"/>
+                <outlet property="leadingConstraint" destination="eHM-qa-PBh" id="jij-Pg-2x8"/>
+                <outlet property="nameLabel" destination="Bmb-5V-lWc" id="wvZ-JG-zJK"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="13" height="8"/>
+    </resources>
+</document>

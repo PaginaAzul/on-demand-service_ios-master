@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyWalletTableViewCellAndXib" rowHeight="60" id="KGk-i7-Jjw" customClass="MyWalletTableViewCellAndXib" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuV-6b-IQe">
+                        <rect key="frame" x="15" y="0.0" width="434" height="59.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarImg" translatesAutoresizingMaskIntoConstraints="NO" id="ard-3h-Y9v">
+                                <rect key="frame" x="12" y="21" width="16" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="kst-DN-KNb"/>
+                                    <constraint firstAttribute="width" constant="16" id="xa8-Ew-a0n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05.00 SAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPS-Lx-Izr">
+                                <rect key="frame" x="38" y="21" width="53.5" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17.5" id="GeB-nm-mnw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05.00 SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-7g-VtG">
+                                <rect key="frame" x="190.5" y="22" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05.00 SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPU-Td-rs8">
+                                <rect key="frame" x="365.5" y="22" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterPurpleImg" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-EN-U8Y">
+                                <rect key="frame" x="374.5" y="0.0" width="59.5" height="59.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59.5" id="Hbs-uc-AAR"/>
+                                    <constraint firstAttribute="width" constant="59.5" id="ygZ-dO-S0g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oPU-Td-rs8" firstAttribute="centerY" secondItem="uuV-6b-IQe" secondAttribute="centerY" id="2lm-qq-ZBs"/>
+                            <constraint firstItem="nOg-7g-VtG" firstAttribute="centerY" secondItem="uuV-6b-IQe" secondAttribute="centerY" id="Gq2-jl-Qck"/>
+                            <constraint firstAttribute="bottom" secondItem="xcO-EN-U8Y" secondAttribute="bottom" id="HAz-ve-5Le"/>
+                            <constraint firstItem="nOg-7g-VtG" firstAttribute="centerX" secondItem="uuV-6b-IQe" secondAttribute="centerX" id="OTt-jf-LV5"/>
+                            <constraint firstItem="xcO-EN-U8Y" firstAttribute="top" secondItem="uuV-6b-IQe" secondAttribute="top" id="Pfe-9a-yTY"/>
+                            <constraint firstItem="ard-3h-Y9v" firstAttribute="centerY" secondItem="uuV-6b-IQe" secondAttribute="centerY" id="Slh-Uh-RfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="oPU-Td-rs8" secondAttribute="trailing" constant="15" id="ekV-7E-RVb"/>
+                            <constraint firstAttribute="trailing" secondItem="xcO-EN-U8Y" secondAttribute="trailing" id="m25-eb-pVe"/>
+                            <constraint firstItem="iPS-Lx-Izr" firstAttribute="leading" secondItem="ard-3h-Y9v" secondAttribute="trailing" constant="10" id="x3W-pw-Om0"/>
+                            <constraint firstItem="ard-3h-Y9v" firstAttribute="leading" secondItem="uuV-6b-IQe" secondAttribute="leading" constant="12" id="yLK-zc-Ofc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uuV-6b-IQe" secondAttribute="bottom" id="1vw-v4-hPC"/>
+                    <constraint firstItem="uuV-6b-IQe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="33J-T2-85M"/>
+                    <constraint firstItem="uuV-6b-IQe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GRE-dL-P7b"/>
+                    <constraint firstItem="iPS-Lx-Izr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qsx-or-VfC"/>
+                    <constraint firstAttribute="trailing" secondItem="uuV-6b-IQe" secondAttribute="trailing" constant="15" id="om1-hJ-RYl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgViewHeader" destination="xcO-EN-U8Y" id="Ubv-lz-POh"/>
+                <outlet property="lblMiddle" destination="nOg-7g-VtG" id="o6O-Zc-eVq"/>
+                <outlet property="lblRate" destination="iPS-Lx-Izr" id="Kli-VM-I9Z"/>
+                <outlet property="lblTotalRate" destination="oPU-Td-rs8" id="mgW-VE-MCe"/>
+                <outlet property="viewBackground" destination="uuV-6b-IQe" id="apB-v8-CkT"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="152.92353823088456"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendarImg" width="16" height="18"/>
+        <image name="filterPurpleImg" width="15" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="35" id="KGk-i7-Jjw" customClass="ServicesTableViewCell" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GT-jB-ui2">
+                        <rect key="frame" x="25" y="7" width="43" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CDf-LQ-cvw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-0L-kHh">
+                        <rect key="frame" x="292" y="13.5" width="13" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="c8X-oe-VA1"/>
+                            <constraint firstAttribute="height" constant="8" id="hyF-oY-0ZA"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pf-of-j9D">
+                        <rect key="frame" x="25" y="33.5" width="280" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.39818992077464788" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6Y6-SV-hZb"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="GWx-d5-qP5"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1" id="ZZq-5n-ypz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1GT-jB-ui2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Ba3-mm-09c"/>
+                    <constraint firstAttribute="trailing" secondItem="XfT-0L-kHh" secondAttribute="trailing" constant="15" id="Dcj-NZ-U5n"/>
+                    <constraint firstAttribute="trailing" secondItem="2pf-of-j9D" secondAttribute="trailing" constant="15" id="c5V-1r-w9j"/>
+                    <constraint firstItem="XfT-0L-kHh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="d60-Lz-yQB"/>
+                    <constraint firstItem="1GT-jB-ui2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="emD-RU-dEb"/>
+                    <constraint firstItem="2pf-of-j9D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="hIL-xE-TNg"/>
+                    <constraint firstAttribute="bottom" secondItem="2pf-of-j9D" secondAttribute="bottom" id="x2V-qW-8fq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="1GT-jB-ui2" id="1wY-Co-9kh"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="140"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="13" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Joker_JokerUITests {
+  umbrella header "Pods-Joker-JokerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

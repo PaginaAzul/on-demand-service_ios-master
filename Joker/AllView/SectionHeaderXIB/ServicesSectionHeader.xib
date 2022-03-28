@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ServicesSectionHeader" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh0-EA-BXd">
+                    <rect key="frame" x="15" y="7" width="43" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Osg-05-srC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Us3-Ie-Sng">
+                    <rect key="frame" x="15" y="34" width="345" height="1"/>
+                    <color key="backgroundColor" white="0.67000000000000004" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Fk5-Fr-X3u"/>
+                        <constraint firstAttribute="height" constant="1" id="nGP-Gi-Q8e"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="bq0-e0-BQR">
+                    <rect key="frame" x="347" y="13.5" width="13" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="DHB-DY-JGr"/>
+                        <constraint firstAttribute="width" constant="13" id="bVm-Jy-XSg"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvp-cG-TGL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cvp-cG-TGL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1Jk-p5-NHt"/>
+                <constraint firstItem="Us3-Ie-Sng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Atp-mC-ZIX"/>
+                <constraint firstAttribute="trailing" secondItem="Us3-Ie-Sng" secondAttribute="trailing" constant="15" id="GVG-8e-gfY"/>
+                <constraint firstItem="Us3-Ie-Sng" firstAttribute="top" secondItem="cvp-cG-TGL" secondAttribute="bottom" id="JQ8-oO-ceC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bq0-e0-BQR" secondAttribute="trailing" constant="15" id="Sb9-BV-aXp"/>
+                <constraint firstItem="Us3-Ie-Sng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="WR4-kn-KeJ"/>
+                <constraint firstItem="Nh0-EA-BXd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="ZIy-2L-Cd1"/>
+                <constraint firstItem="Nh0-EA-BXd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="bPU-5s-fpR"/>
+                <constraint firstItem="cvp-cG-TGL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cxo-z2-iTk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Us3-Ie-Sng" secondAttribute="bottom" id="jKL-0B-kW5"/>
+                <constraint firstItem="Us3-Ie-Sng" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="jhr-xz-kMs"/>
+                <constraint firstItem="bq0-e0-BQR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jvo-6O-VJj"/>
+                <constraint firstAttribute="trailing" secondItem="Us3-Ie-Sng" secondAttribute="trailing" constant="15" id="v51-lZ-Z7f"/>
+                <constraint firstItem="cvp-cG-TGL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vLk-9W-QNz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnSection" destination="cvp-cG-TGL" id="aT4-i2-ifX"/>
+                <outlet property="imgDownArrow" destination="bq0-e0-BQR" id="aaw-kW-Dbk"/>
+                <outlet property="lblCategory" destination="Nh0-EA-BXd" id="O2l-GL-Is8"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="141.67916041979012"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downArrow" width="13" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DeliveryAddress" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xux-nQ-Z0G">
+                    <rect key="frame" x="58.5" y="8" width="45" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u6-jv-nCi">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
+                            <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.52549019607843139" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="18g-Bm-ysl"/>
+                        <constraint firstItem="1u6-jv-nCi" firstAttribute="top" secondItem="xux-nQ-Z0G" secondAttribute="top" id="JRI-DK-c1t"/>
+                        <constraint firstAttribute="trailing" secondItem="1u6-jv-nCi" secondAttribute="trailing" id="Lm6-gF-ur6"/>
+                        <constraint firstAttribute="height" constant="20" id="MCA-0k-Fs4"/>
+                        <constraint firstAttribute="bottom" secondItem="1u6-jv-nCi" secondAttribute="bottom" id="Ubc-e7-GHk"/>
+                        <constraint firstItem="1u6-jv-nCi" firstAttribute="leading" secondItem="xux-nQ-Z0G" secondAttribute="leading" id="mFx-0h-Kot"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myLocationBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-19-Rjt">
+                    <rect key="frame" x="65" y="31" width="32" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="QeB-a0-LP0"/>
+                        <constraint firstAttribute="height" constant="45" id="biU-re-lUh"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABg-9r-hyf">
+                    <rect key="frame" x="7" y="78" width="148" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noida sector 63 h block noida" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnp-06-GTV">
+                            <rect key="frame" x="8" y="3" width="137" height="34"/>
+                            <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gnp-06-GTV" firstAttribute="leading" secondItem="ABg-9r-hyf" secondAttribute="leading" constant="8" id="HKl-vm-0pm"/>
+                        <constraint firstAttribute="trailing" secondItem="gnp-06-GTV" secondAttribute="trailing" constant="3" id="XcV-Ae-DKF"/>
+                        <constraint firstAttribute="height" constant="40" id="hFd-zq-XGQ"/>
+                        <constraint firstAttribute="bottom" secondItem="gnp-06-GTV" secondAttribute="bottom" constant="3" id="hYX-Uj-IaM"/>
+                        <constraint firstItem="gnp-06-GTV" firstAttribute="top" secondItem="ABg-9r-hyf" secondAttribute="top" constant="3" id="hqk-Zq-5cR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ba9-19-Rjt" firstAttribute="top" secondItem="xux-nQ-Z0G" secondAttribute="bottom" constant="3" id="4SH-5z-mb8"/>
+                <constraint firstItem="xux-nQ-Z0G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AMb-Kr-plc"/>
+                <constraint firstItem="ABg-9r-hyf" firstAttribute="top" secondItem="Ba9-19-Rjt" secondAttribute="bottom" constant="2" id="Kr3-QF-bsQ"/>
+                <constraint firstItem="ABg-9r-hyf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="NUJ-Dc-SJA"/>
+                <constraint firstItem="xux-nQ-Z0G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="XlY-jb-VUc"/>
+                <constraint firstItem="Ba9-19-Rjt" firstAttribute="centerX" secondItem="1u6-jv-nCi" secondAttribute="centerX" id="ghf-it-jyK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ABg-9r-hyf" secondAttribute="trailing" constant="7" id="sTU-NV-LsP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgMarker" destination="Ba9-19-Rjt" id="day-q9-zXJ"/>
+                <outlet property="lblAddress" destination="gnp-06-GTV" id="BIY-V8-vQf"/>
+                <outlet property="lblAddressType" destination="1u6-jv-nCi" id="JLe-wp-Gzm"/>
+                <outlet property="viewAddressType" destination="xux-nQ-Z0G" id="iBi-hB-8d6"/>
+            </connections>
+            <point key="canvasLocation" x="105.59999999999999" y="145.27736131934034"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="myLocationBlue" width="32" height="45"/>
+    </resources>
+</document>

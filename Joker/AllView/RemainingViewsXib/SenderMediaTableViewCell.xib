@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+        <array key="seguisb_0.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMediaTableViewCell" rowHeight="194" id="KGk-i7-Jjw" customClass="SenderMediaTableViewCell" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="193.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user2" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-xE-Ebj">
+                        <rect key="frame" x="82" y="30" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="gUb-TT-wFu"/>
+                            <constraint firstAttribute="height" constant="70" id="j85-nn-dAy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYT-gH-wdi">
+                        <rect key="frame" x="168" y="30" width="53.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Uin-Dc-hYl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ol8-IU-yQw">
+                        <rect key="frame" x="160" y="55" width="144" height="115"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImg" translatesAutoresizingMaskIntoConstraints="NO" id="Jpm-mr-Uem">
+                                <rect key="frame" x="8" y="8" width="128" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="RHu-aZ-fFz"/>
+                                    <constraint firstAttribute="width" constant="128" id="qrD-oN-bbD"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-qm-xI6">
+                                <rect key="frame" x="8" y="87" width="128" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KR-a7-9HD">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="20"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3KR-a7-9HD" firstAttribute="top" secondItem="6Fn-qm-xI6" secondAttribute="top" id="C5J-GZ-zEo"/>
+                                    <constraint firstAttribute="height" constant="20" id="HoZ-jf-gag"/>
+                                    <constraint firstAttribute="trailing" secondItem="3KR-a7-9HD" secondAttribute="trailing" id="Qsx-Hg-Myh"/>
+                                    <constraint firstItem="3KR-a7-9HD" firstAttribute="leading" secondItem="6Fn-qm-xI6" secondAttribute="leading" id="YOx-Tx-4J5"/>
+                                    <constraint firstAttribute="bottom" secondItem="3KR-a7-9HD" secondAttribute="bottom" id="dna-HE-Jho"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549020000001" green="0.57254901960000004" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Fn-qm-xI6" secondAttribute="trailing" constant="8" id="75G-eX-qw9"/>
+                            <constraint firstItem="Jpm-mr-Uem" firstAttribute="centerY" secondItem="ol8-IU-yQw" secondAttribute="centerY" id="810-17-zxf"/>
+                            <constraint firstItem="Jpm-mr-Uem" firstAttribute="centerX" secondItem="ol8-IU-yQw" secondAttribute="centerX" id="9XW-yU-h0f"/>
+                            <constraint firstItem="6Fn-qm-xI6" firstAttribute="leading" secondItem="ol8-IU-yQw" secondAttribute="leading" constant="8" id="MSs-jQ-ws9"/>
+                            <constraint firstAttribute="bottom" secondItem="6Fn-qm-xI6" secondAttribute="bottom" constant="8" id="URf-uq-vqS"/>
+                            <constraint firstAttribute="width" constant="144" id="rO8-Xx-bJb"/>
+                            <constraint firstAttribute="height" constant="115" id="s5d-Ab-OLv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_corner" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-HG-mRa">
+                        <rect key="frame" x="148" y="101.5" width="12" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="XsD-yK-bXt"/>
+                            <constraint firstAttribute="height" constant="22" id="g1n-V6-o6I"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RYT-gH-wdi" firstAttribute="leading" secondItem="TOW-xE-Ebj" secondAttribute="trailing" constant="16" id="7Lu-Xs-rdT"/>
+                    <constraint firstItem="ol8-IU-yQw" firstAttribute="leading" secondItem="ddk-HG-mRa" secondAttribute="trailing" id="EfD-BE-Vex"/>
+                    <constraint firstAttribute="bottom" secondItem="ol8-IU-yQw" secondAttribute="bottom" constant="23.5" id="JWV-Ta-mQ5"/>
+                    <constraint firstItem="TOW-xE-Ebj" firstAttribute="top" secondItem="RYT-gH-wdi" secondAttribute="top" id="Phv-20-Wog"/>
+                    <constraint firstAttribute="trailing" secondItem="ol8-IU-yQw" secondAttribute="trailing" constant="16" id="Vxb-5U-sXz"/>
+                    <constraint firstItem="ddk-HG-mRa" firstAttribute="leading" secondItem="TOW-xE-Ebj" secondAttribute="trailing" constant="-4" id="eyl-kS-oj6"/>
+                    <constraint firstItem="ol8-IU-yQw" firstAttribute="top" secondItem="RYT-gH-wdi" secondAttribute="bottom" constant="5" id="hSc-i1-fcR"/>
+                    <constraint firstItem="RYT-gH-wdi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="pmF-cl-aB8"/>
+                    <constraint firstItem="ddk-HG-mRa" firstAttribute="centerY" secondItem="Jpm-mr-Uem" secondAttribute="centerY" id="x8Y-0L-EFp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgSender" destination="TOW-xE-Ebj" id="slg-fj-xAf"/>
+                <outlet property="imgSenderMedia" destination="Jpm-mr-Uem" id="Pgr-KQ-DQN"/>
+                <outlet property="lblLocationName" destination="3KR-a7-9HD" id="9yf-wK-ulq"/>
+                <outlet property="lblTime" destination="RYT-gH-wdi" id="NNd-s7-heq"/>
+                <outlet property="viewLocationHolder" destination="6Fn-qm-xI6" id="1F2-lu-dKC"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="82.758620689655174"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_corner" width="12" height="22"/>
+        <image name="placeholderImg" width="100" height="100"/>
+        <image name="user2" width="47" height="47"/>
+    </resources>
+</document>

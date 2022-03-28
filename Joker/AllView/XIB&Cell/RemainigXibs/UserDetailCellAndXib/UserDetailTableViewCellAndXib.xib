@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+        <array key="seguisb_0.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserDetailTableViewCellAndXib" rowHeight="71" id="KGk-i7-Jjw" customClass="UserDetailTableViewCellAndXib" customModule="PaginAzul" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Shukla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-IG-9W9">
+                        <rect key="frame" x="15" y="15" width="78" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FTn-sp-EKq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRQ-RX-6mX" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="102" y="15" width="128" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="OJ6-VF-ctM"/>
+                            <constraint firstAttribute="height" constant="20" id="Uxb-ke-hkn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.99607843139999996" green="0.78039215689999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-Pd-JlG">
+                        <rect key="frame" x="15" y="43" width="290" height="20.5"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rX4-Pd-JlG" secondAttribute="bottom" constant="7.5" id="05l-bN-HHJ"/>
+                    <constraint firstAttribute="trailing" secondItem="rX4-Pd-JlG" secondAttribute="trailing" constant="15" id="0j7-yK-503"/>
+                    <constraint firstItem="NJf-IG-9W9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3Fk-Yl-t4N"/>
+                    <constraint firstItem="rX4-Pd-JlG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6kZ-S5-TSD"/>
+                    <constraint firstItem="YRQ-RX-6mX" firstAttribute="centerY" secondItem="NJf-IG-9W9" secondAttribute="centerY" id="jJF-zE-kuB"/>
+                    <constraint firstItem="NJf-IG-9W9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="oSE-eR-za2"/>
+                    <constraint firstItem="YRQ-RX-6mX" firstAttribute="leading" secondItem="NJf-IG-9W9" secondAttribute="trailing" constant="9" id="quF-lx-9ty"/>
+                    <constraint firstItem="rX4-Pd-JlG" firstAttribute="top" secondItem="NJf-IG-9W9" secondAttribute="bottom" constant="8" id="zQw-wR-zzB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDescription" destination="rX4-Pd-JlG" id="Xxq-rb-D0O"/>
+                <outlet property="lblName" destination="NJf-IG-9W9" id="gWb-DT-Z9v"/>
+                <outlet property="viewRating" destination="YRQ-RX-6mX" id="dGW-Nf-x0C"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="158.77061469265368"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="YRQ-RX-6mX">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="35" id="KGk-i7-Jjw" customClass="OrderTimeTableViewCell" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nG6-OX-FwK">
+                        <rect key="frame" x="0.0" y="0.0" width="1" height="34.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.69402825342465757" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="WeR-PI-7S1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Within 1 hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0P-7K-Egy">
+                        <rect key="frame" x="16" y="7" width="91" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="IuN-M3-GlV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="0.73370612157534243" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dH-dK-ESn">
+                        <rect key="frame" x="319" y="0.0" width="1" height="34.5"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="eUM-aK-9AN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nG6-OX-FwK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0HC-0x-10w"/>
+                    <constraint firstItem="8dH-dK-ESn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="237-Uy-qC3"/>
+                    <constraint firstItem="nG6-OX-FwK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9M2-M3-k4w"/>
+                    <constraint firstAttribute="trailing" secondItem="8dH-dK-ESn" secondAttribute="trailing" id="SOH-dc-vLa"/>
+                    <constraint firstAttribute="bottom" secondItem="8dH-dK-ESn" secondAttribute="bottom" id="WGq-mo-iRS"/>
+                    <constraint firstItem="S0P-7K-Egy" firstAttribute="leading" secondItem="nG6-OX-FwK" secondAttribute="trailing" constant="15" id="ZZC-Iu-p6F"/>
+                    <constraint firstAttribute="bottom" secondItem="nG6-OX-FwK" secondAttribute="bottom" id="b0t-qj-wy5"/>
+                    <constraint firstItem="S0P-7K-Egy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="rPb-cd-w36"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTime" destination="S0P-7K-Egy" id="4LP-PF-G7j"/>
+                <outlet property="viewSelectedLine" destination="8dH-dK-ESn" id="5HT-hO-6y9"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="115.59220389805098"/>
+        </tableViewCell>
+    </objects>
+</document>

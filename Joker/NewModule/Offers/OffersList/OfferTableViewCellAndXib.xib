@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular_0.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="172" id="KGk-i7-Jjw" customClass="OfferTableViewCellAndXib" customModule="PaginAzul" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-ra-1g1">
+                        <rect key="frame" x="10" y="8" width="406" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_b" translatesAutoresizingMaskIntoConstraints="NO" id="3a5-k2-EI8">
+                                <rect key="frame" x="15" y="15" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="v1u-h8-wlZ"/>
+                                    <constraint firstAttribute="height" constant="120" id="yl1-vA-AgT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An5-JD-jnx">
+                                <rect key="frame" x="151" y="15" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" text="Kz 7.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2X-CO-BdT">
+                                <rect key="frame" x="241" y="37" width="47.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" red="0.036077499389999997" green="0.57245105500000004" blue="0.8170866966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="This offer is valid from 12/04/2019 till 18/04/2019" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMn-qi-UuI">
+                                <rect key="frame" x="15" y="140" width="376" height="33"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="13"/>
+                                <color key="textColor" white="0.29999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Kz. 9.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="klY-9A-Wa5">
+                                <rect key="frame" x="172.5" y="37" width="41" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWY-AN-EbH">
+                                <rect key="frame" x="298" y="177" width="95" height="44"/>
+                                <color key="backgroundColor" red="0.036077499389999997" green="0.57245105500000004" blue="0.8170866966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="63n-Vc-TEV"/>
+                                    <constraint firstAttribute="width" constant="95" id="ijo-th-Dgq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Add to cart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Was" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Cj1-HJ-JiL">
+                                <rect key="frame" x="151" y="38.5" width="18.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Now" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="oAD-1p-3IY">
+                                <rect key="frame" x="218.5" y="38.5" width="19.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="10"/>
+                                <color key="textColor" red="0.036077499389999997" green="0.57245105500000004" blue="0.8170866966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3a5-k2-EI8" firstAttribute="leading" secondItem="MvA-ra-1g1" secondAttribute="leading" constant="15" id="0aR-9o-en9"/>
+                            <constraint firstItem="klY-9A-Wa5" firstAttribute="centerY" secondItem="Cj1-HJ-JiL" secondAttribute="centerY" id="4kQ-vN-uN3"/>
+                            <constraint firstItem="d2X-CO-BdT" firstAttribute="leading" secondItem="oAD-1p-3IY" secondAttribute="trailing" constant="3" id="HTj-IH-teL"/>
+                            <constraint firstItem="rMn-qi-UuI" firstAttribute="leading" secondItem="3a5-k2-EI8" secondAttribute="leading" id="HgS-bz-HIO"/>
+                            <constraint firstItem="An5-JD-jnx" firstAttribute="leading" secondItem="3a5-k2-EI8" secondAttribute="trailing" constant="16" id="Jv7-l5-wA8"/>
+                            <constraint firstAttribute="trailing" secondItem="rMn-qi-UuI" secondAttribute="trailing" constant="15" id="LNr-Fn-wov"/>
+                            <constraint firstAttribute="bottom" secondItem="zWY-AN-EbH" secondAttribute="bottom" constant="13" id="NYk-BT-qTU"/>
+                            <constraint firstItem="zWY-AN-EbH" firstAttribute="top" secondItem="rMn-qi-UuI" secondAttribute="bottom" constant="4" id="UqG-PG-s7M"/>
+                            <constraint firstItem="3a5-k2-EI8" firstAttribute="top" secondItem="An5-JD-jnx" secondAttribute="top" id="Y4f-ld-NyZ"/>
+                            <constraint firstItem="Cj1-HJ-JiL" firstAttribute="leading" secondItem="An5-JD-jnx" secondAttribute="leading" id="bHI-pU-uYi"/>
+                            <constraint firstAttribute="height" constant="234" id="fFT-3M-Aw2"/>
+                            <constraint firstItem="Cj1-HJ-JiL" firstAttribute="top" secondItem="An5-JD-jnx" secondAttribute="bottom" constant="3" id="gFy-Ih-WtZ"/>
+                            <constraint firstItem="oAD-1p-3IY" firstAttribute="leading" secondItem="klY-9A-Wa5" secondAttribute="trailing" constant="5" id="ggc-0O-0wK"/>
+                            <constraint firstItem="klY-9A-Wa5" firstAttribute="leading" secondItem="Cj1-HJ-JiL" secondAttribute="trailing" constant="3" id="hN2-5I-4SP"/>
+                            <constraint firstItem="rMn-qi-UuI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d2X-CO-BdT" secondAttribute="bottom" constant="10" id="m5D-xN-o6B"/>
+                            <constraint firstItem="An5-JD-jnx" firstAttribute="top" secondItem="MvA-ra-1g1" secondAttribute="top" constant="15" id="m94-dW-bEs"/>
+                            <constraint firstItem="rMn-qi-UuI" firstAttribute="top" secondItem="3a5-k2-EI8" secondAttribute="bottom" constant="5" id="qfQ-CD-76M"/>
+                            <constraint firstAttribute="trailing" secondItem="An5-JD-jnx" secondAttribute="trailing" constant="15" id="sAb-7a-RlJ"/>
+                            <constraint firstItem="oAD-1p-3IY" firstAttribute="centerY" secondItem="Cj1-HJ-JiL" secondAttribute="centerY" id="wMF-Gx-iy3"/>
+                            <constraint firstItem="d2X-CO-BdT" firstAttribute="centerY" secondItem="oAD-1p-3IY" secondAttribute="centerY" id="zWX-us-Yoq"/>
+                            <constraint firstAttribute="trailing" secondItem="zWY-AN-EbH" secondAttribute="trailing" constant="13" id="zyF-aD-edU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MvA-ra-1g1" secondAttribute="bottom" constant="8" id="6x1-69-a8T"/>
+                    <constraint firstItem="MvA-ra-1g1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8Z2-Nf-GN8"/>
+                    <constraint firstItem="MvA-ra-1g1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="T0U-DV-psr"/>
+                    <constraint firstAttribute="trailing" secondItem="MvA-ra-1g1" secondAttribute="trailing" constant="10" id="geH-jN-qQL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addToCartHeight" destination="63n-Vc-TEV" id="Lor-xq-NNd"/>
+                <outlet property="addToCartWidth" destination="ijo-th-Dgq" id="b3m-iQ-xq5"/>
+                <outlet property="btnAddToCart" destination="zWY-AN-EbH" id="toO-WV-lgF"/>
+                <outlet property="imgThumbnail" destination="3a5-k2-EI8" id="WgL-Zy-6Hj"/>
+                <outlet property="lblNow" destination="oAD-1p-3IY" id="6Xa-za-30D"/>
+                <outlet property="lblPrice" destination="d2X-CO-BdT" id="JTy-q5-MiH"/>
+                <outlet property="lblTitle" destination="An5-JD-jnx" id="Wr9-l1-kcf"/>
+                <outlet property="lblValidity" destination="rMn-qi-UuI" id="NPc-Rl-STW"/>
+                <outlet property="lblWas" destination="Cj1-HJ-JiL" id="8Le-Zu-V6V"/>
+                <outlet property="strikePrice" destination="klY-9A-Wa5" id="R2U-6P-qKI"/>
+                <outlet property="viewMain" destination="MvA-ra-1g1" id="6Ld-rc-R9T"/>
+                <outlet property="vwMainHeight" destination="fFT-3M-Aw2" id="NOK-2S-cwc"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="151.00446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="item_b" width="44" height="44"/>
+    </resources>
+</document>

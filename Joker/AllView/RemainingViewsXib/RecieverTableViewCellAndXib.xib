@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecieverTableViewCellAndXib" rowHeight="99" id="bvh-mv-Kvv" customClass="RecieverTableViewCellAndXib" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvh-mv-Kvv" id="mG2-Z4-XmG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user2" translatesAutoresizingMaskIntoConstraints="NO" id="xUd-2M-fem">
+                        <rect key="frame" x="166.5" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="3RV-gV-fdP"/>
+                            <constraint firstAttribute="height" constant="70" id="xPh-7P-xvX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T2-aE-rXm">
+                        <rect key="frame" x="251.5" y="15" width="53.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XFU-kv-PK5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_corner" translatesAutoresizingMaskIntoConstraints="NO" id="xeh-WG-wZM">
+                        <rect key="frame" x="244.5" y="53" width="12" height="22"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-iH-xB6">
+                        <rect key="frame" x="256.5" y="45" width="33.5" height="39"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-Mb-UPg">
+                                <rect key="frame" x="8" y="8" width="17.5" height="23"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549020000001" green="0.57254901960000004" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="13y-al-M5G"/>
+                            <constraint firstAttribute="bottom" secondItem="QtN-Mb-UPg" secondAttribute="bottom" constant="8" id="7UF-az-luf"/>
+                            <constraint firstItem="QtN-Mb-UPg" firstAttribute="top" secondItem="I2Q-iH-xB6" secondAttribute="top" constant="8" id="8pn-Wd-Hqt"/>
+                            <constraint firstItem="QtN-Mb-UPg" firstAttribute="leading" secondItem="I2Q-iH-xB6" secondAttribute="leading" constant="8" id="jGC-Bm-2Pb"/>
+                            <constraint firstAttribute="trailing" secondItem="QtN-Mb-UPg" secondAttribute="trailing" constant="8" id="rEm-Rt-1Ik"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I2Q-iH-xB6" firstAttribute="leading" secondItem="xeh-WG-wZM" secondAttribute="trailing" id="HkY-t0-EfT"/>
+                    <constraint firstItem="7T2-aE-rXm" firstAttribute="leading" secondItem="xUd-2M-fem" secondAttribute="trailing" constant="15" id="KiY-mv-1z1"/>
+                    <constraint firstItem="xeh-WG-wZM" firstAttribute="top" secondItem="QtN-Mb-UPg" secondAttribute="top" id="M7M-lc-Wej"/>
+                    <constraint firstAttribute="bottom" secondItem="I2Q-iH-xB6" secondAttribute="bottom" constant="14.5" id="OdT-M5-1QV"/>
+                    <constraint firstAttribute="trailing" secondItem="I2Q-iH-xB6" secondAttribute="trailing" constant="30" id="S5a-YD-1vT"/>
+                    <constraint firstItem="I2Q-iH-xB6" firstAttribute="leading" secondItem="xUd-2M-fem" secondAttribute="trailing" constant="20" id="SdQ-Ya-Quu"/>
+                    <constraint firstItem="I2Q-iH-xB6" firstAttribute="top" secondItem="7T2-aE-rXm" secondAttribute="bottom" constant="10" id="TYY-Bz-0O6"/>
+                    <constraint firstItem="xUd-2M-fem" firstAttribute="top" secondItem="mG2-Z4-XmG" secondAttribute="top" constant="15" id="X95-PV-VKU"/>
+                    <constraint firstItem="xUd-2M-fem" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mG2-Z4-XmG" secondAttribute="leading" constant="30" id="YB6-xl-fcb"/>
+                    <constraint firstAttribute="trailing" secondItem="7T2-aE-rXm" secondAttribute="trailing" constant="15" id="fMU-zP-wUM"/>
+                    <constraint firstItem="7T2-aE-rXm" firstAttribute="top" secondItem="mG2-Z4-XmG" secondAttribute="top" constant="15" id="xmr-YD-ZwK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="v2n-PI-A79"/>
+            <connections>
+                <outlet property="imgUser" destination="xUd-2M-fem" id="D4z-QS-kF1"/>
+                <outlet property="lblMessageText" destination="QtN-Mb-UPg" id="EwR-Yy-5km"/>
+                <outlet property="lblTime" destination="7T2-aE-rXm" id="HH4-KE-N3M"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="177.21139430284859"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_corner" width="12" height="22"/>
+        <image name="user2" width="47" height="47"/>
+    </resources>
+</document>

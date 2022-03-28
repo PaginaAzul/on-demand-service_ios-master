@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cQu-qo-9m8" customClass="MarkerForDestination" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropoffGreen" translatesAutoresizingMaskIntoConstraints="NO" id="h20-TN-yJY">
+                    <rect key="frame" x="19" y="25" width="32" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="0I2-r5-XqA"/>
+                        <constraint firstAttribute="height" constant="45" id="KsK-iR-yqx"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-AN-75n">
+                    <rect key="frame" x="5" y="5" width="60" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dropoff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grX-d5-phB">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                            <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2315349877" green="0.62473332879999999" blue="0.077093891799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="grX-d5-phB" firstAttribute="leading" secondItem="qOG-AN-75n" secondAttribute="leading" id="7AK-OF-0gy"/>
+                        <constraint firstAttribute="height" constant="20" id="9FA-aR-jYB"/>
+                        <constraint firstAttribute="bottom" secondItem="grX-d5-phB" secondAttribute="bottom" id="9Xu-GE-xkt"/>
+                        <constraint firstItem="grX-d5-phB" firstAttribute="top" secondItem="qOG-AN-75n" secondAttribute="top" id="VRc-Rd-GsJ"/>
+                        <constraint firstAttribute="trailing" secondItem="grX-d5-phB" secondAttribute="trailing" id="Vug-qj-yOl"/>
+                        <constraint firstAttribute="width" constant="60" id="udx-fv-oTd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vOo-4a-wGC" firstAttribute="bottom" secondItem="h20-TN-yJY" secondAttribute="bottom" id="0tG-HW-7jY"/>
+                <constraint firstItem="h20-TN-yJY" firstAttribute="top" secondItem="qOG-AN-75n" secondAttribute="bottom" id="5fH-TV-gw1"/>
+                <constraint firstItem="qOG-AN-75n" firstAttribute="centerX" secondItem="cQu-qo-9m8" secondAttribute="centerX" id="IpW-PW-mfg"/>
+                <constraint firstItem="h20-TN-yJY" firstAttribute="centerX" secondItem="cQu-qo-9m8" secondAttribute="centerX" id="iVH-4z-5KY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vOo-4a-wGC"/>
+            <connections>
+                <outlet property="lblAddress" destination="grX-d5-phB" id="tx3-du-WZX"/>
+                <outlet property="viewContainer" destination="qOG-AN-75n" id="h3g-m8-FrJ"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropoffGreen" width="31" height="45"/>
+    </resources>
+</document>

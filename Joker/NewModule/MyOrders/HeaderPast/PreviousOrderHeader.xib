@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1fy-zy-Zct" customClass="PreviousOrderHeader" customModule="PaginAzul" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ka-6T-Hyg">
+                    <rect key="frame" x="10" y="0.0" width="394" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8u6-ZG-6GR">
+                            <rect key="frame" x="10" y="10" width="90" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="feq-zq-ZVs"/>
+                                <constraint firstAttribute="height" constant="90" id="s1F-Yr-SXx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ja-pW-bF4">
+                            <rect key="frame" x="112" y="10" width="229" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="car-1e-2RO">
+                            <rect key="frame" x="346" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="BRh-F7-dDW"/>
+                                <constraint firstAttribute="height" constant="40" id="kMW-Sf-6Kw"/>
+                            </constraints>
+                            <state key="normal" image="down_arrow"/>
+                        </button>
+                        <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RJ-CB-mbH">
+                            <rect key="frame" x="282" y="13" width="102" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="M5N-o1-14e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title=" Rate Order" image="rate">
+                                <color key="titleColor" white="0.18494168133802816" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-dy-XPm">
+                            <rect key="frame" x="112" y="30.5" width="31" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-C8-oli">
+                            <rect key="frame" x="0.0" y="150" width="394" height="50"/>
+                            <color key="backgroundColor" red="0.080499477680000001" green="0.59143269060000003" blue="0.82106596229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="kNO-OY-qZZ"/>
+                            </constraints>
+                            <state key="normal" title="   Reorder" image="reloder"/>
+                            <connections>
+                                <action selector="tapReorder:" destination="1fy-zy-Zct" eventType="touchUpInside" id="Q6s-Lx-kT8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="car-1e-2RO" firstAttribute="leading" secondItem="3ja-pW-bF4" secondAttribute="trailing" constant="5" id="0th-s7-sBU"/>
+                        <constraint firstItem="8u6-ZG-6GR" firstAttribute="top" secondItem="4ka-6T-Hyg" secondAttribute="top" constant="10" id="4Ow-nz-zZn"/>
+                        <constraint firstItem="jcF-dy-XPm" firstAttribute="leading" secondItem="3ja-pW-bF4" secondAttribute="leading" id="5bq-21-M4d"/>
+                        <constraint firstAttribute="trailing" secondItem="8RJ-CB-mbH" secondAttribute="trailing" constant="10" id="AAA-ZP-hEr"/>
+                        <constraint firstAttribute="bottom" secondItem="o0d-C8-oli" secondAttribute="bottom" id="DxF-Rr-9Na"/>
+                        <constraint firstItem="3ja-pW-bF4" firstAttribute="top" secondItem="8u6-ZG-6GR" secondAttribute="top" id="EeE-XT-jzp"/>
+                        <constraint firstItem="3ja-pW-bF4" firstAttribute="leading" secondItem="8u6-ZG-6GR" secondAttribute="trailing" constant="12" id="NHC-e9-ZQL"/>
+                        <constraint firstItem="o0d-C8-oli" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jcF-dy-XPm" secondAttribute="bottom" constant="15" id="ZpI-GR-qoL"/>
+                        <constraint firstItem="8u6-ZG-6GR" firstAttribute="leading" secondItem="4ka-6T-Hyg" secondAttribute="leading" constant="10" id="eEe-fW-JeB"/>
+                        <constraint firstAttribute="trailing" secondItem="o0d-C8-oli" secondAttribute="trailing" id="ejl-kS-YB7"/>
+                        <constraint firstItem="car-1e-2RO" firstAttribute="top" secondItem="4ka-6T-Hyg" secondAttribute="top" id="mpe-1t-H3F"/>
+                        <constraint firstItem="8RJ-CB-mbH" firstAttribute="centerY" secondItem="jcF-dy-XPm" secondAttribute="centerY" id="nJM-Z8-QlX"/>
+                        <constraint firstAttribute="trailing" secondItem="car-1e-2RO" secondAttribute="trailing" constant="8" id="vQy-TJ-LaU"/>
+                        <constraint firstItem="o0d-C8-oli" firstAttribute="leading" secondItem="4ka-6T-Hyg" secondAttribute="leading" id="wCK-M7-d60"/>
+                        <constraint firstItem="jcF-dy-XPm" firstAttribute="top" secondItem="3ja-pW-bF4" secondAttribute="bottom" id="z0z-ll-Ugo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dUS-p2-FBr"/>
+            <constraints>
+                <constraint firstItem="4ka-6T-Hyg" firstAttribute="leading" secondItem="1fy-zy-Zct" secondAttribute="leading" constant="10" id="82L-bh-Sc1"/>
+                <constraint firstItem="4ka-6T-Hyg" firstAttribute="top" secondItem="1fy-zy-Zct" secondAttribute="top" id="9Ir-Sq-n7L"/>
+                <constraint firstItem="dUS-p2-FBr" firstAttribute="trailing" secondItem="4ka-6T-Hyg" secondAttribute="trailing" constant="10" id="I4r-0K-Qnj"/>
+                <constraint firstItem="dUS-p2-FBr" firstAttribute="bottom" secondItem="4ka-6T-Hyg" secondAttribute="bottom" id="Kru-0X-qdV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnRateOrder" destination="8RJ-CB-mbH" id="FYE-ht-fGk"/>
+                <outlet property="btnReorderRef" destination="o0d-C8-oli" id="FkD-1D-dlr"/>
+                <outlet property="btnTap" destination="car-1e-2RO" id="P05-WT-hDO"/>
+                <outlet property="dateTimeLbl" destination="jcF-dy-XPm" id="GyY-uM-4Ee"/>
+                <outlet property="heightReorder" destination="kNO-OY-qZZ" id="Vhe-wz-mRx"/>
+                <outlet property="imgView" destination="8u6-ZG-6GR" id="rvT-pi-GHa"/>
+                <outlet property="lblTitle" destination="3ja-pW-bF4" id="N2O-gb-6ci"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="-198.21428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="13" height="7"/>
+        <image name="pizza_logo" width="64" height="63"/>
+        <image name="rate" width="14" height="14"/>
+        <image name="reloder" width="15" height="16"/>
+    </resources>
+</document>

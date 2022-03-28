@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DestinationAddress" customModule="Joker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jokerMarkerImg" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-UL-rms">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Rxm-gN-lvZ"/>
+                        <constraint firstAttribute="height" constant="40" id="hjq-O7-8mD"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46r-nu-QAQ">
+                    <rect key="frame" x="41" y="2" width="216" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H 146-147 Noida sector 63 India H 146-147 Noida sector 63 India " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSZ-9B-fty">
+                            <rect key="frame" x="6" y="4" width="206" height="28"/>
+                            <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qSZ-9B-fty" firstAttribute="leading" secondItem="46r-nu-QAQ" secondAttribute="leading" constant="6" id="7EI-g2-GSd"/>
+                        <constraint firstItem="qSZ-9B-fty" firstAttribute="top" secondItem="46r-nu-QAQ" secondAttribute="top" constant="4" id="CVb-FD-0iM"/>
+                        <constraint firstAttribute="bottom" secondItem="qSZ-9B-fty" secondAttribute="bottom" constant="4" id="Wnb-1R-Ecc"/>
+                        <constraint firstAttribute="trailing" secondItem="qSZ-9B-fty" secondAttribute="trailing" constant="4" id="ahW-oR-GaR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="46r-nu-QAQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="4eo-Yc-OIt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="46r-nu-QAQ" secondAttribute="trailing" id="7yQ-kX-zaN"/>
+                <constraint firstItem="qhb-UL-rms" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Svr-le-Tk0"/>
+                <constraint firstAttribute="bottom" secondItem="46r-nu-QAQ" secondAttribute="bottom" constant="2" id="YmP-AP-dZb"/>
+                <constraint firstItem="46r-nu-QAQ" firstAttribute="leading" secondItem="qhb-UL-rms" secondAttribute="trailing" constant="1" id="aSP-bU-XAI"/>
+                <constraint firstItem="qhb-UL-rms" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="clM-kR-6zO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblAddress" destination="qSZ-9B-fty" id="7i6-ZU-Vct"/>
+                <outlet property="viewContainer" destination="46r-nu-QAQ" id="8r6-nB-Bu2"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="149.32533733133434"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jokerMarkerImg" width="51" height="51"/>
+    </resources>
+</document>
